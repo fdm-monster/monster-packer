@@ -37,3 +37,8 @@ Result: 6% improvement on a quite beefy GCode file. I expect this improvement to
 \*The whitespace 'should' be reconstructable on the fly given common sense. All parameters starting with X,Y,Z,S,R,F,T,W, etc can be prefixed with a whitespace to restore the original gcode line.
 
 # Results
+
+From my results it is clear that MonsterPacker is a decent approach to encoding GCode 5% more efficiently than MeatPacker in its default mode. Still, I would like to add that block encoding/compressing - multiple lines at the same time - must result in better efficiency. 
+The latter is proven by the fact that the practical upper bound of 1.667MB (-91.9%) by 7Zip, Zip and XZ is still quite far from -59.5%.
+
+I hope this helps you and your project!
